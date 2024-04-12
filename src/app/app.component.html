@@ -1,9 +1,24 @@
 <div class="start-0 top-0 position-absolute min-vw-100 min-vh-100">
-  <div class="position-absolute z-4 position-sticky top-0 start-0">
+  <div id="topbar" class="position-fixed top-0 start-0 vw-100 h-25">
     <app-top-bar></app-top-bar>
   </div>
 
-  <div class="position-absolute z-n1 m-0 p-0 top-0 start-0 mh-100vh my-bg">
-    <router-outlet></router-outlet>
+  <div id="my-bg" class="position-fixed vh-100 vw-100">
+
+  </div>
+
+  <div id="my-content" class="p-0 top-0 start-0 min-vh-100 vw-100">
+    <div class="position-absolute w-100 h-100">
+      <div class="container h-100">
+        <div class="row">
+          <div class="col"></div>
+          <div id="main-row" class="col-6 p-5">
+            <router-outlet></router-outlet>
+          </div>
+          <div class="col"></div>
+        </div>
+
+      </div>
+    </div>
   </div>
 </div>

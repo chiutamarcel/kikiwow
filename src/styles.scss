@@ -4,14 +4,24 @@
 
 $bg-grad1: rgba(#000000, 0);
 $bg-grad2: rgba(#000000, 1);
-.my-bg {
+#my-bg {
     min-height: 100vh;
-    background-image: radial-gradient($bg-grad1 50%, $bg-grad2), url("/assets/img/banner.jpg");
+    background-image: radial-gradient($bg-grad1 25%, $bg-grad2), url("/assets/img/banner.jpg");
     background-attachment: fixed;
+    color: $light;
 }
 
-$card-grad1: rgba($primary, .5);
+$card-grad1: rgba($primary, .7);
 $card-grad2: rgba($primary, .0);
 .my-gradient {
-    background-image: linear-gradient(to right, $card-grad1 50%, $card-grad2);
+    background-image: linear-gradient(90deg, $card-grad2, $card-grad1 25%, $card-grad2 125%);
+}
+
+#topbar {
+    z-index: 9999;
+}
+
+#my-content {
+    color: $light;
+    margin-top: 100px;
 }
