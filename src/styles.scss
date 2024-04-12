@@ -17,15 +17,20 @@ $card-grad2: rgba($primary, .0);
     background-image: linear-gradient(90deg, $card-grad2, $card-grad1 25%, $card-grad2 125%);
 }
 
+$topbarHeight: 50px;
+
 #topbar {
+    height:$topbarHeight;
     z-index: 9999;
 }
 
 #my-content {
     color: $light;
-    margin-top: 100px;
+    min-height: calc(100% - $topbarHeight);
+    margin-top: $topbarHeight;
 }
 
 #main-row {
     background-image: linear-gradient(to right, #ffffff00 0%,  #010101ab 20%, #010101ab 80%, #ffffff00 );
+    min-height: 100%;
 }
