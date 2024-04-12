@@ -1,7 +1,0 @@
-@use '../../assets/scss/_variables.scss' as vars;
-
-$card-grad1: rgba(vars.$primary, .5);
-$card-grad2: rgba(vars.$primary, .0);
-.my-gradient {
-    background-image: linear-gradient(to right, $card-grad1 50%, $card-grad2);
-}

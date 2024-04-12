@@ -1,12 +1,24 @@
 <!-- <img class="top-0 start-0 w-100 h-auto" src="../../assets/img/banner.jpg"> -->
 <div class="w-100 h-100 m-0">
-    <div class="my-gradient h-100 w-50 p-5">
+    <div class="h-100 w-50 p-5 my-gradient">
         <h1 class="mb-5 mt-5 text-light">Wrath of the Lich King</h1>
         <p class="text-light">
-            The nostalgic retail-like experience. Adventure into the heart of Morthrend to fight against
+            The nostalgic retail-like experience. Adventure into the heart of Northrend to fight against
             the undead army. Find new allies and be part of guilds. Enter dungeons for great loot and iconic stories.
             Everything is possible on KikiWOW. Our staff delivers original 1x rates and bug-free experience for you to enjoy.
         </p>
+
+        <div class="h-auto w-100 pt-5">
+            <h1 class="text-white">News</h1>
+            <div *ngFor="let item of news" class="card my-2 bg-dark">
+                <div class="card-body">
+                    <h5 class="card-title text-white">Changelog #{{item.id}}</h5>
+                    <p class="card-text text-white">
+                        {{item.description}}
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
 
 </div>
