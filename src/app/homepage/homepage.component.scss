@@ -1,0 +1,13 @@
+@use '../../assets/scss/_variables.scss' as vars;
+
+$bg-grad1: rgba(#000000, 0);
+$bg-grad2: rgba(#000000, 1);
+#ctnMain {
+    background-image: radial-gradient($bg-grad1 50%, $bg-grad2), url("../../assets/img/banner.jpg");
+}
+
+$card-grad1: rgba(vars.$primary, .5);
+$card-grad2: rgba(vars.$primary, .0);
+.my-bg-gradient {
+    background-image: linear-gradient(to right, $card-grad1 50%, $card-grad2);
+}
