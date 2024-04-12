@@ -1,27 +1,23 @@
 # Kikiwow
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.3.
+This project is a demo website for a fictional WoW private server. This game is one of my favorites, and I always admired the websites of some private servers. Therefore, I decided
+to make one of my own.
 
-## Development server
+## Installing the application
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Before running the application, you must first install it by running the command `npm install`
 
-## Code scaffolding
+## Running the application
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+To execute the application, simply run the command `ng serve`
 
-## Build
+## Description of the app's architecture
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+The website is a single page web app build using angular. Each of the routes are separated into their own components. For example, the `/shop` route points to the ShopComponent. Moreover, the components can collectively use services. This app has only one demo service, namely the AuthService, which should be used for authentication related operations like logging in, registering and deleting an account. Currently, the AuthService is used for storing the logged used in order for the `/account` page to display the user's information. The framework used for styling the pages is bootstrap, customized by modifying the color variables in `src/assets/scss/_variables.css` and
+`src/styles.scss`.
 
-## Running unit tests
+## Notes
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+The account page can be accessed by logging in or registering through the relevant pages.
+The forum link should point to an external website destined to be the forum of the community, therefore it doesn't route to anything.
+The database link should be a page for searching items, quests and anything in the database of the game. It isn't implemented and doesn't route to anything.
