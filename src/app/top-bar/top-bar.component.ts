@@ -7,6 +7,7 @@ export const barItems: string[] = [
   "shop",
   "rules",
   "realms",
+  "forum",
   "database"
 ];
 

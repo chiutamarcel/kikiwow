@@ -1,1 +1,20 @@
-<p>realms works!</p>
+<h1 class="text-center mb-5">Realms</h1>
+
+<table class="table table-dark">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Realm Name</th>
+        <th scope="col">Expansion</th>
+        <th scope="col">Population</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let realm of realms; let i = index">
+        <th scope="row">{{i+1}}</th>
+        <td>{{realm.name}}</td>
+        <td>{{realm.expansion}}</td>
+        <td>{{realm.population}}</td>
+      </tr>
+    </tbody>
+  </table>
