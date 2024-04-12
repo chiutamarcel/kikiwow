@@ -6,36 +6,21 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link link-light">
-              Rules
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link link-light">
-              Realms
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link link-light">
-              Database
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link link-light">
-              Forum
+          <li *ngFor="let item of barItems" class="nav-item">
+            <a class="nav-link link-light" [routerLink] = "item">
+              {{ item | titlecase }}
             </a>
           </li>
         </ul>
   
         <ul class="navbar-nav me-0 mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link link-light">
+            <a class="nav-link link-light" routerLink = "login">
               Login
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link link-light">
+            <a class="nav-link link-light" routerLink = "register">
               Register
             </a>
           </li>

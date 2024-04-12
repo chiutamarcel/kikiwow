@@ -1,3 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 @import "./assets/scss/_variables.scss";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+$bg-grad1: rgba(#000000, 0);
+$bg-grad2: rgba(#000000, 1);
+.my-bg {
+    background-image: radial-gradient($bg-grad1 50%, $bg-grad2), url("/assets/img/banner.jpg");
+}
