@@ -1,1 +1,15 @@
-<p>shop works!</p>
+<h1 class="mb-5 text-center">Shop</h1>
+
+<div class="d-flex align-content-start flex-wrap">
+    <div *ngFor="let product of products" class="card mb-3 me-auto bg-primary">
+        <img [src]="product.img" class="card-img-top" alt="assets/default-product.jpg">
+        <div class="card-body">
+            <h5 class="card-title">{{product.title}}</h5>
+            <p class="card-text">Description: {{product.description}}</p>
+            <p class="card-text">Category: {{product.category}}</p>
+            <p class="card-text">Price: {{product.price}}</p>
+        </div>
+        <a href="#" class="btn m-3 btn-secondary text-white">Purchase</a>
+    </div>
+</div>
+  
